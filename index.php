@@ -18,7 +18,7 @@ show_html_head(TITLE);
 <div class="row">
 	<div class="col-md-10 col-sm-10 col-xs-10">
 		<ul data-role="listview">
-			<li data-icon="false"><a href="http://gc16.local:4200">shell in a box</a></li>
+<!--			<li data-icon="false"><a href="http<?= $_SERVER["HTTPS"] ? "s" : "" ?>://<?= $_SERVER["HTTP_HOST"] ?>:4200">shell in a box</a></li> -->
 			<!-- <h2><a href="SCRIPT/BackupPi_2">BackupPi_2</a></h2>
 			<h2><a href="SCRIPT/monitor/index.php?serial_id=0000000000000000">monitor</a></h2>
 			<h2><a href="SCRIPT/say/say.php">say</a></h2>
@@ -29,7 +29,7 @@ show_html_head(TITLE);
 	</div><!-- <div class="col-md-4 col-sm-6 col-xs-12"> -->
 	<div class="col-md-2 col-sm-2 col-xs-2">
 		<ul data-role="listview">
-			<li data-icon="false"><a href="#panel-help-shellinabox" style="text-align: center !important;"><i class="fa fa-question"></i></a></li>
+<!--			<li data-icon="false"><a href="#panel-help-shellinabox" style="text-align: center !important;"><i class="fa fa-question"></i></a></li> -->
 			<li data-icon="false"><a href="#panel-help-finder" 	    style="text-align: center !important;"><i class="fa fa-question"></i></a></li>
 			<li data-icon="false"><a href="#panel-help-infos"       style="text-align: center !important;"><i class="fa fa-question"></i></a></li>
 		</ul>
@@ -41,14 +41,14 @@ show_html_head(TITLE);
 
 <?php show_html_footer(); ?>
 
-	<div data-role="panel" id="panel-help-shellinabox" data-position="right" data-theme="b">
+<!--	<div data-role="panel" id="panel-help-shellinabox" data-position="right" data-theme="b">
 	  <div class="panel-content">
 	    <h3>shell in a box</h3>
 	    <p>provides a debug console. You can <b>login</b> to the <b>internal Linux console</b> by this. Please <b>ask</b> appropriate <b>id & pw</b> to the <b>addministrator</b>.</p>
 	    <img src="/SCRIPT/pic/shellinabox.png" width="50%" height="50%">
 	    <a href="#demo-links" data-rel="close" data-role="button" data-theme="c" data-icon="back" data-inline="true">Back</a>
 	  </div>
-	</div><!-- panel -->
+	</div>--><!-- panel -->
 
 	<div data-role="panel" id="panel-help-finder" data-position="right" data-theme="b">
 	  <div class="panel-content">
